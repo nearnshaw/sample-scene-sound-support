@@ -1,12 +1,12 @@
-import { createElement, ScriptableScene, Vector3Component } from "metaverse-api";
+import { createElement, ScriptableScene, Vector3Component } from "metaverse-api"
 
 interface IState {
 
 }
 
 const Tile = (props: { position: Vector3Component }) => {
-  const colores = ["#1dccc7", "#ffce00", "#9076ff", "#fe3e3e", "#3efe94", "#3d30ec", "#6699cc"];
-  const index0 = Math.floor(Math.random() * colores.length);
+  const colores = ["#1dccc7", "#ffce00", "#9076ff", "#fe3e3e", "#3efe94", "#3d30ec", "#6699cc"]
+  const index0 = Math.floor(Math.random() * colores.length)
 
   return (<box
     id="caja"
@@ -23,7 +23,7 @@ export default class RollerCoaster extends ScriptableScene<any, IState> {
   sceneDidMount() {
     setInterval(() => {
       this.forceUpdate()
-    }, 500);
+    }, 500)
   }
 
 
@@ -54,6 +54,6 @@ export default class RollerCoaster extends ScriptableScene<any, IState> {
           ]}
         />
       </scene>
-    );
+    )
   }
 }
