@@ -1,27 +1,17 @@
 {
-  "display": {
-    "title": "sound-support"
+  "name": "dcl-project",
+  "version": "1.0.0",
+  "description": "My new Decentraland project",
+  "scripts": {
+    "start": "dcl start",
+    "now-start": "dcl start --ci",
+    "build": "decentraland-compiler build.json",
+    "watch": "decentraland-compiler build.json --watch"
   },
-  "owner": "",
-  "contact": {
-    "name": "decentraland",
-    "email": "info@decentraland.org"
-  },
-  "scene": {
-    "parcels": [
-      "0,0"
-    ],
-    "base": "0,0"
-  },
-  "communications": {
-    "type": "webrtc",
-    "signalling": "https://rendezvous.decentraland.org"
-  },
-  "policy": {
-    "fly": true,
-    "voiceEnabled": true,
-    "blacklist": [],
-    "teleportPosition": "0,0,0"
-  },
-  "main": "dist/scene.js"
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "decentraland-api": "latest",
+    "decentraland": "latest"
+  }
 }
