@@ -1,4 +1,5 @@
-import { createElement, ScriptableScene, Vector3Component } from "metaverse-api"
+import { createElement, ScriptableScene, Vector3Component } from "decentraland-api"
+
 
 interface IState {
 

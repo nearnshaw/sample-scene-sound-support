@@ -1,16 +1,17 @@
 {
-  "name": "sound-support",
+  "name": "dcl-project",
   "version": "1.0.0",
   "description": "My new Decentraland project",
   "scripts": {
-    "build": "metaverse-compiler build.json",
-    "watch": "metaverse-compiler build.json --watch",
-    "start": "dcl preview"
+    "start": "dcl start",
+    "now-start": "dcl start --ci",
+    "build": "decentraland-compiler build.json",
+    "watch": "decentraland-compiler build.json --watch"
   },
-  "author": "decentraland",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
-    "metaverse-api": "^4.0.2",
-    "typescript": "^2.7.2"
+    "decentraland-api": "latest",
+    "decentraland": "latest"
   }
 }
